@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIPA - UniDoações</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo-container">
+            <img src="../assets/img/Logo UniDoações.png" alt="Logo UniDoações" width="400px">
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html">Ínicio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="solicitarAjuda.html">Solicitar Ajuda</a>
+            <a href="queroDoar.html">Quero Doar</a>
+            <a href="">UIPA</a>
+        </nav>
+        <div class="nav-cadastro">
+            <a href="Cadastro.html">
+                <span>♡</span> Faça seu Cadastro
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="corFundo-sec1">
+            <div class="balao">
+                <p>🐾 Proteção Animal</p>
+            </div>
+            <h1 class="titulo-principal">
+                <span class="texto-gradiente-titulo">ONG UIPA</span>
+            </h1>
+            <p class="texto-principal">União Internacional Protetora dos Animais - Itapetininga</p>
+            <p class="texto-principal" style="max-width: 800px;">Dedicados à proteção e cuidado de animais abandonados. Sua ajuda faz toda a diferença!</p>
+        </section>
+
+        <section class="corFundo-sec2">
+            <div class="container-cards" style="padding-bottom: 20px;">
+                <button class="botao-categoria" onclick="trocarForm('form1')">
+                    <span class="icone-categoria">♡</span>
+                    <p>Doar PIX</p>
+                </button>
+                <button class="botao-categoria" onclick="trocarForm('form2')">
+                    <span class="icone-categoria">🦴</span>
+                    <p>Doar Ração</p>
+                </button>
+                <button class="botao-categoria" onclick="trocarForm('form3')">
+                    <span class="icone-categoria">🐈</span>
+                    <p>Adotar</p>
+                </button>
+                <button class="botao-categoria" onclick="trocarForm('form4')">
+                    <span class="icone-categoria">⭐</span>
+                    <p>Apadrinhar</p>
+                </button>
+            </div>
+
+            <div class="formulario-container">
+                <div id="form1" class="meu-formulario">
+                    <h2 id="tamanho-texto">Doação via PIX</h2>
+                    <p class="form-desc">Faça uma doação rápida e segura via PIX para ajudar os animais.</p>
+                    
+                    <div class="pix-box">
+                        <p>Chave PIX (CNPJ):</p>
+                        <div class="copy-wrapper">
+                            <strong id="minhaChave">uipa@itapetininga.pix</strong>
+                            <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+                        </div>
+                    </div>
+
+                    <form class="form-style">
+                        <div class="form-group">
+                            <label for="nomePix">Nome completo *</label>
+                            <input type="text" placeholder="Seu nome" id="nomePix" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cpfPix">CPF *</label>
+                                <input type="text" placeholder="000.000.000-00" id="cpfPix" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="valorPix">Valor da Doação *</label>
+                                <input type="text" placeholder="R$ 0,00" id="valorPix" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailPix">E-mail *</label>
+                            <input type="email" placeholder="seu@email.com" id="emailPix" required>
+                        </div>
+                        <div id="nav-cadastro-meio"><a>Confirmar Doação</a></div>
+                    </form>
+                </div>
+
+                <div id="form2" class="meu-formulario" hidden>
+                    <h2 id="tamanho-texto">Doação de Ração</h2>
+                    <p class="form-desc">Doe ração para ajudar a alimentar os animais do abrigo.</p>
+                    <form class="form-style">
+                        <div class="form-group">
+                            <label for="nomeRacao">Nome completo *</label>
+                            <input type="text" placeholder="Seu nome" id="nomeRacao" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefoneRacao">Telefone *</label>
+                            <input type="text" placeholder="(15) 99999-9999" id="telefoneRacao" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tipoRacao">Tipo de ração *</label>
+                                <input type="text" placeholder="Ex: Cães adultos" id="tipoRacao" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quantidadeRacao">Quantidade (kg)*</label>
+                                <input type="text" placeholder="Ex: 10kg" id="quantidadeRacao" required>
+                            </div>
+                        </div>
+                        <div id="nav-cadastro-meio"><a>Notificar Doação</a></div>
+                    </form>
+                </div>
+
+                <div id="form3" class="meu-formulario" hidden>
+                    <h2 id="tamanho-texto">Adoção Responsável</h2>
+                    <p class="form-desc">Adote um amigo de quatro patas e transforme duas vidas.</p>
+                    <form class="form-style">
+                        <div class="form-group">
+                            <label for="nomeAdocao">Nome completo *</label>
+                            <input type="text" placeholder="Seu nome" id="nomeAdocao" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cpfAdocao">CPF *</label>
+                                <input type="text" id="cpfAdocao" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefoneAdocao">Telefone *</label>
+                                <input type="text" id="telefoneAdocao" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="enderecoAdocao">Endereço completo *</label>
+                            <input type="text" id="enderecoAdocao" required>
+                        </div>
+                        <div class="form-group">
+                            <p>Já possui outros animais? *</p>
+                            <div style="display:flex; gap:10px">
+                                <input type="radio" name="outros" id="s"> <label for="s">Sim</label>
+                                <input type="radio" name="outros" id="n"> <label for="n">Não</label>
+                            </div>
+                        </div>
+                        <div id="nav-cadastro-meio"><a>Enviar Interesse</a></div>
+                    </form>
+                </div>
+
+                <div id="form4" class="meu-formulario" hidden>
+                    <h2 id="tamanho-texto">Apadrinhamento</h2>
+                    <p class="form-desc">Ajude a custear os cuidados mensais de um animal.</p>
+                    <form class="form-style">
+                        <div class="form-group">
+                            <label for="nomeAp">Nome completo *</label>
+                            <input type="text" id="nomeAp" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="emailAp">E-mail *</label>
+                                <input type="email" id="emailAp" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telAp">Telefone *</label>
+                                <input type="text" id="telAp" required>
+                            </div>
+                        </div>
+                        <div id="nav-cadastro-meio"><a>Quero ser Padrinho/Madrinha</a></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <section class="container-cards">
+            <article class="card-rodape">
+                <img src="../assets/img/Logo UniDoações.png" alt="Logo UniDoações" width="200px">
+                <p>Conectando pessoas que precisam com <br>pessoas que podem ajudar. Juntos fazemos <br>a diferença.</p>
+            </article>
+            <article class="card-rodape">
+                <h3>Links Rápidos</h3>
+                <a href="../index.html">ínicio</a><br>
+                <a href="sobre.html">Sobre nós</a><br>
+                <a href="solicitarAjuda.html">Solicitar Ajuda</a><br>
+                <a href="queroDoar.html">Quero Doar</a><br>
+            </article>
+            <article class="card-rodape">
+                <h3>ONG UIPA</h3>
+                <a href="">Conheça a UIPA</a><br>
+                <a href="">Doe via PIX</a><br>
+                <a href="">Adoção Responsável</a><br>
+                <a href="">apadrinhamento</a><br>
+            </article>
+            <article class="card-rodape">
+                <h3>Contato</h3>
+                <p>Itapetininga</p>
+                <p>(15) 99999-9999</p>
+                <p>contato@unidoacoes.org</p>
+            </article>
+        </section>
+        <section class="container-cards">
+            <article class="card-rodape">
+                <p>© 2024 UniDoações. Todos os direitos reservados.</p>
+            </article>
+            <article class="card-rodape">
+                <p>Feito com ❤️ em Itapetininga</p>
+            </article>
+        </section>
+    </footer>
+
+    <script>
+        function trocarForm(idAlvo) {
+            const todosOsForms = document.querySelectorAll('.meu-formulario');
+            todosOsForms.forEach(form => form.hidden = true);
+            document.getElementById(idAlvo).hidden = false;
+        }
+
+        function copiarTexto() {
+            const textoParaCopiar = document.getElementById('minhaChave').innerText;
+            navigator.clipboard.writeText(textoParaCopiar).then(() => {
+                alert("Chave PIX copiada!");
+            });
+        }
+    </script>
+</body>
+</html>

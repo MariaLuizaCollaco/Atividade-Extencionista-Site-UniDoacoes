@@ -1,0 +1,394 @@
+/* ==========================================================================
+   ESTILOS BASE - INDEX
+   ========================================================================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 100px;
+    margin: 0;
+    background-color: #f4f7f9;
+}
+
+.cabecalho {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 40px;
+    height: 120px;
+}
+
+.logo-container,
+.nav-cadastro {
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-cadastro {
+    justify-content: flex-end;
+}
+
+#nav-cadastro-meio a {
+    width: 250px;
+    margin: 20px auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #0b7dda;
+    padding: 12px 18px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-cadastro a {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #0b7dda;
+    padding: 12px 18px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-cadastro a:hover {
+    background-color: #2b90e2;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+/* SEÇÕES */
+.corFundo-sec1 {
+    background: linear-gradient(to bottom, #deeefb, #eef6fb);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.corFundo-sec2 {
+    background-color: #f2f5f8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.corFundo-sec3 {
+    background: linear-gradient(to right, #1e87de, #34b376);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ELEMENTOS VISUAIS */
+.balao {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: fit-content;
+    padding: 0 25px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.balao-transparente p {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2); 
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: fit-content;
+    padding: 0 25px;
+    border-radius: 50px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.titulo-principal {
+    font-size: 70px;
+    color: #0b7dda;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.texto-gradiente-titulo {
+    background: linear-gradient(to right, #0b7dda, #00a86b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.texto-principal {
+    font-size: 20px;
+    color: #555555;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.botoes-principais {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.botao-transparente a {
+    color: #0b7dda;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 2px solid #0b7dda;
+    padding: 12px 18px;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao-transparente a:hover {
+    background-color: #0b7dda;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.container-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+}
+
+.card-cor {
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#tamanho-texto {
+    font-size: 35px;
+}
+
+#tamanho-texto-sec3 {
+    font-size: 50px;
+    color: white;
+}
+
+#texto-sec3 {
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: #1a334d;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-rodape a {
+    width: 350px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.rodape h3, 
+.rodape p, 
+.rodape a {
+    text-align: left;
+    color: white;
+}
+
+/* ==========================================================================
+   ESTILOS PARA FORMULÁRIOS (AUXÍLIO E DOADOR)
+   ========================================================================== */
+.formulario-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="email"],
+.form-group input[type="number"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+/* BOTÕES DE CATEGORIA UIPA */
+.botao-categoria {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    width: 150px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botao-categoria:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(11, 125, 218, 0.2);
+}
+
+.icone-categoria {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0b7dda;
+}
+
+.botao-categoria p {
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+/* BOX PIX */
+.pix-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 1px dashed #0b7dda;
+}
+
+.copy-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-copiar {
+    background: #0b7dda;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-desc {
+    margin-bottom: 25px;
+    color: #666;
+}
